@@ -2,146 +2,144 @@
 <html>
 <head>
   <title>Le Media Review</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Playball|Sanchez|Cherry+Swash' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="http://necolas.github.com/normalize.css/2.1.0/normalize.css">
   <style type="text/css">
-    html { font-size: 62.5%; }
 
-    body {
-      padding: 20px 0;
-      font-family: 'Sanchez', Garamond, serif;
-      font-size: 1.6rem;
-      line-height: 133%;
-      background: #add9e4; /* Old browsers */
-      background: -moz-linear-gradient(top,  #add9e4 0%, #d9edf2 60%, #f7fbfc 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#add9e4), color-stop(60%,#d9edf2), color-stop(100%,#f7fbfc)); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top,  #add9e4 0%,#d9edf2 60%,#f7fbfc 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top,  #add9e4 0%,#d9edf2 60%,#f7fbfc 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(top,  #add9e4 0%,#d9edf2 60%,#f7fbfc 100%); /* IE10+ */
-      background: linear-gradient(to bottom,  #add9e4 0%,#d9edf2 60%,#f7fbfc 100%); /* W3C */
+  .main {
+    padding: 11px 0 0 5px;
+    font-family: 'Sanchez', Garamond, serif;
+    font-size: 1rem;
+    line-height: 133%;
+    background: #add9e4;
+  }
+
+  .wrapper {
+    width:315px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    -webkit-box-shadow:  0px 0px 4px 3px rgba(0, 0, 0, 0.1);
+    box-shadow:  0px 0px 4px 3px rgba(0, 0, 0, 0.1);
     }
 
-    #wrapper {
-      width: 70%;
-      padding: 2rem;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 8px;
-      -webkit-box-shadow:  0px 0px 4px 3px rgba(0, 0, 0, 0.1);
-      box-shadow:  0px 0px 4px 3px rgba(0, 0, 0, 0.1);
-    }
+  .sidebar {
+    background: #bce8dc;
+    font-size: 1rem;
+    font-weight
+  }
 
-    #review-wrapper {
-      margin: 5rem 0;
-    }
+  .review-wrapper {
+  margin: 5rem 0;
+  }
 
-    .review {
-      margin: 4rem 0;
-    }
+  .review {
+    margin: 1rem 0;
+  }
 
-    .h1 {
-      font-family: 'Playball', Helvetica, arial;
-      font-size: 8rem;
-      line-height: 133%;
-      text-align: center;
-      border-bottom: 2px dotted #aaa;
-      margin: 3rem 0;
-    }
+  .h1 {
+    font-family: 'Playball', Helvetica, arial;
+    font-size: 4rem;
+    line-height: 133%;
+    text-align: center;
+    border-bottom: 1px dotted #aaa;
+    margin: 1.5rem 0;
+  }
 
-    .h2 {
-      font-family: 'Cherry Swash', Helvetica, arial;
-      font-size: 3rem;
-      margin-bottom: .5rem;
-    }
+  .h2 {
+    font-family: 'Cherry Swash', Helvetica, arial;
+    font-size: 2rem;
+    margin-bottom: .3rem;
+  }
 
-    .h3 {
-      font-size: 1.5rem;
-      letter-spacing: -0.1rem;
-      text-transform: uppercase;
-    }
+  .h3 {
+    font-size: 1rem;
+    letter-spacing: -0.1rem;
+    text-transform: uppercase;
+  }
 
-    a {
-      text-decoration: none;
-      color: #8f62b9;
-    }
+  a {
+    text-decoration: none;
+    color: #8f62b9;
+  }
 
-    .review {
-      margin: 7rem 0;
-      clear: both;
-    }
+  .review {
+    margin: 1rem 0;
+    clear: both;
+  }
 
-    p.first {
-      font-size: 2rem;
-      line-height: 133%;
-    }
+  .first {
+    font-size: 1rem;
+    line-height: 133%;
+  }
 
-    aside.sidebar {
-      float: right;
-      width: 25%;
-      background: #bce8dc;
-      padding: 0 1.6rem;
-      margin-left: 2rem;
-      border-radius: 4px;
-      font-size: 1.4rem;
-    }
+  .neely {
+    margin: .9rem 0;
+  }
 
-    blockquote {
-      margin: 1rem 0;
-    }
+  .gallery {
+    display: inline-block;
+    background: #f0edeb;
+    border: 1px dotted #999;
+    padding: 1rem;
+  }
 
-    .gallery {
-      display: inline-block;
-      background: #f0edeb;
-      border: 1px dotted #999;
-      padding: 1rem;
-    }
+  .gallery img {
+    display:block;
+    margin: 8px;
+    border: 1px solid #000;
+  }
 
-    .gallery img {
-      border: 1px solid #000;
-    }
+  .likes {
+    display:inline-block;
+  }
 
-    .likes {
-      float: right;
-      width: 25%;
-    }
+  .likes a {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: .75rem;
+    width: 75px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    filter: dropshadow(color=#000, offx=1, offy=1);
+  }
 
-    .likes a {
-      font-family: Helvetica, arial, sans-serif;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1rem;
-      display: inline-block;
-      padding: 3px 6px;
-      border-radius: 4px;
-      color: #fff;
-      text-shadow: 1px 1px 1px #000;
-      filter: dropshadow(color=#000, offx=1, offy=1);
-    }
+  .yay { background: #3a962a; }
+  .yay.active, .yay:hover { background: #00752f; }
+  .boo { background: #b93337; }
+  .boo.active, .boo:hover { background: #8c070f; }
 
-    .likes a span {
-      font-size: 2rem;
-    }
+  .footer {
 
-    .yay { background: #3a962a; }
-    .yay.active, .yay:hover { background: #00752f; }
-    .boo { background: #b93337; }
-    .boo.active, .boo:hover { background: #8c070f; }
+  }
 
-    .meta, small {
-      color: #555;
-      font-size: 1.4rem;
-    }
+
+  .meta, small {
+    color: #555;
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+
   </style>
 </head>
-<body>
+<body class="main">
 
-<div id="wrapper">
+<div class="wrapper">
   <header>
     <h1 class="h1">Media Dine-In</h1>
   </header>
 
-  <section id="review-wrapper">
+  <section class="review-wrapper">
     <article class="review">
       <hgroup class="title">
         <h2 class="h2">The Hobbit</h2>
@@ -211,7 +209,7 @@
       <aside class="sidebar">
         <p>
           Brad Neely:
-          <blockquote>
+          <blockquote class="neely">
             "I joked that night that I was going to rush home and record an
             entire misinformed book on tape of The Sorcerer's Stone, because I had not and
             have not ever read any Harry Potter books. Once I started making notes for it
@@ -260,9 +258,9 @@
         </p>
       </footer>
     </article><!-- /.review -->
-  </section> <!-- /#review-wrapper -->
+  </section> <!-- /.review-wrapper -->
 
-  <footer id="footer">
+  <footer class="footer">
     <p>
       All content &copy; 2013 Media Dine In Inc. <small>We can't help it if you don't have a sense of humor.</small>
     </p>
